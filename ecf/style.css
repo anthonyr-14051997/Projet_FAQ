@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+}
+body {
+    background: no-repeat linear-gradient(#FCD665, #FF5DCB);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+main {
+    border-radius: 23px;
+    width: 50%;
+    height: auto;
+    background-color: #FFFFFF;
+    display: flex;
+}
+.right {
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+.left {
+    width: 50%;
+}
+.title {
+    font-weight: 700;
+    margin-bottom: 5vh;
+    font-size: 2em;
+}
+.hide {
+    display: none;
+    width: 100%;
+    height: 20%;
+    margin-top: .2vh;
+    font-size: .7em;
+    color: black;
+    margin-top: 1vh;
+    font-weight: 0;
+}
+.quest {
+    background: none;
+    outline: none;
+    font-size: 1em;
+    width: 80%;
+    height: 20%;
+    cursor: pointer;
+    margin-right: 10vh;
+}
+.line {
+    width: 80%;
+    margin-bottom: 2vh;
+    border-bottom: 0.2vh solid rgba(0, 0, 0, 0.2);
+}
+.quest:hover {
+    color: #FF5ACD;
+}
+.quest_focus {
+    font-weight: 700;
+    line-height: 17px;
+}
+.up {
+    display: none;
+    float: right;
+}
+.down {
+    display: block;
+    float: right;
+}
+.desktop {
+    width: 80%;
+}
+.tel {
+    display: none;
+}
+.cercle {
+    position: relative;
+    z-index: 4;
+    top: 14%;
+    right: 53%;
+}
+.tri_1 {
+    position: relative;
+    z-index: 1;
+    background: #6862E6;
+    /* mix-blend-mode: normal; */
+    opacity: 0.1;
+    margin-top: 10%;
+}
+.tri_3 {
+    position: relative;
+    z-index: 3;
+}
+.tri_2 {
+    position: relative;
+    z-index: 2;
+    
+}
+
+@media screen and (max-width: 944px) {
+    body {
+        height: 100vh;
+    }
+    main {
+        margin-bottom: 10vh;
+        margin-top: 10vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+    .desktop {
+        display: none;
+    }
+    .tel {
+        display: block;
+        position: absolute;
+        top: -80px;
+        left: -5%;
+    }
+    .left {
+        position: relative;
+    }
+    .right {
+        margin-top: 20vh;
+        width: 80%;
+    }
+    h2 {
+        text-align: center;
+        font-size: 2em;
+    }
+    .quest {
+        width: 100%;
+        margin-right: 0;
+        font-size: 1.1em;
+    }
+}
